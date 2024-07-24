@@ -1,26 +1,93 @@
-/* Styles spécifiques à la page de veille technologique */
+/* Styles spécifiques à la page Veille Technologique */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Permet le défilement vertical */
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le conteneur prend toute la hauteur de la page */
+    position: relative;
+}
+
+header {
+    background: #333;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #00ff00; /* Vert Matrix */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #00ff00;
+    color: #333;
+}
+
+#matrixCanvas {
+    position: fixed; /* Fixe le canvas en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Met le canvas en arrière-plan */
+}
+
+main {
+    flex: 1; /* Prend l'espace disponible pour permettre au footer de rester en bas */
+}
 
 #veille {
     position: relative;
-    text-align: center;
+    text-align: left;
     color: #00ff00; /* Texte vert Matrix */
+    background: rgba(0, 0, 0, 0.75); /* Fond semi-transparent pour le texte */
+    padding: 2em;
+    border-radius: 10px;
+    width: 80%;
+    margin: 2em auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Assure que la section est au-dessus du canvas */
 }
 
-#veille img {
-    width: 100%;
+.veille-image {
+    display: block;
+    margin: 0 auto 2em auto; /* Centre l'image horizontalement et ajoute un espace en bas */
+    max-width: 100%;
     height: auto;
-    margin-top: 1em;
-}
-
-.section {
-    padding: 4em 2em;
-    text-align: center;
-    background-color: #fff;
-    margin: 2em 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .section h2 {
+    text-align: center;
     font-size: 2.5em;
     margin-bottom: 1em;
     color: #00ff00; /* Vert Matrix */
@@ -29,14 +96,21 @@
 .section p, .section ul {
     font-size: 1.2em;
     line-height: 1.8;
-    color: #666;
+    color: #ccc;
 }
 
-ul {
+.section ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+.section ul li {
     margin-bottom: 0.5em;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: #ccc;
+    text-align: center;
+    padding: 1em 0;
 }

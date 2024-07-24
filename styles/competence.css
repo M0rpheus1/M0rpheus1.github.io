@@ -1,19 +1,17 @@
-/* Styles globaux */
+/* Styles spécifiques à la page Compétences */
 
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
-    background: #000;
-    color: #00ff00;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+    overflow-y: auto; /* Permet le défilement vertical */
+    /* background: #000; Fond noir pour le reste de la page */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Assure que le conteneur prend toute la hauteur de la page */
     position: relative;
 }
 
@@ -26,7 +24,7 @@ header {
 
 header .logo {
     font-size: 1.5em;
-    color: #00ff00;
+    color: #00ff00; /* Vert Matrix */
 }
 
 nav ul {
@@ -55,56 +53,52 @@ nav ul li a:hover {
 }
 
 #matrixCanvas {
-    position: fixed;
+    position: fixed; /* Fixe le canvas en arrière-plan */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Met le canvas en arrière-plan */
 }
 
-/* Styles spécifiques à la page d'accueil */
-
 main {
-    flex: 1;
-    text-align: center;
-    color: #00ff00;
+    flex: 1; /* Prend l'espace disponible pour permettre au footer de rester en bas */
+}
+
+#competences {
+    position: relative;
+    text-align: left;
+    color: #00ff00; /* Texte vert Matrix */
     background: rgba(0, 0, 0, 0.75); /* Fond semi-transparent pour le texte */
     padding: 2em;
     border-radius: 10px;
     width: 80%;
     margin: 2em auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 1; /* Assure que la section est au-dessus du canvas */
 }
 
-.home-image {
-    display: block;
-    margin: 2em auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #00ff00; /* Vert Matrix */
 }
 
-.about-me, .quick-presentation, .social-links {
-    margin: 2em 0;
+.competence {
+    margin-bottom: 2em;
 }
 
-.button {
-    display: inline-block;
+.competence h3 {
+    font-size: 2em;
     margin-top: 1em;
-    padding: 0.5em 1em;
-    background-color: #00ff00;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #00ff00; /* Vert Matrix */
 }
 
-.button:hover {
-    background-color: #333;
-    color: #00ff00;
+.competence p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #ccc;
 }
 
 footer {
@@ -112,7 +106,4 @@ footer {
     color: #ccc;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }

@@ -9,41 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Dervis Sahin</div>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Dervis Sahin</div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="bts_sio.html">BTS SIO</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="veille.html" class="active">Veille Technologique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <canvas id="matrixCanvas"></canvas>
+
+        <main id="veille" class="section">
+            <img src="images/veille1.jpg" alt="Veille Technologique Image" class="veille-image">
+            <h2>Veille Technologique</h2>
+            <p>La veille technologique consiste à surveiller les évolutions techniques et les nouvelles tendances dans le domaine de l'informatique et des technologies de l'information. Elle permet de rester informé des avancées et d'anticiper les changements pour adapter ses compétences et ses projets en conséquence.</p>
+            <p>Au cours de ma formation et de mon parcours professionnel, j'ai régulièrement effectué une veille technologique pour me tenir au courant des dernières innovations. Voici quelques exemples de sujets que j'ai explorés :</p>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profile.html">Profil</a></li>
-                <li><a href="bts_sio.html">BTS SIO</a></li>
-                <li><a href="documentations.html">Documentations</a></li>
-                <li><a href="situations.html">Situations Professionnelles</a></li>
-                <li><a href="patrimoine.html">Gestion du Patrimoine</a></li>
-                <li><a href="veille.html" class="active">Veille Technologique</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><strong>Intelligence Artificielle :</strong> Les nouvelles avancées en matière de machine learning et de deep learning.</li>
+                <li><strong>Blockchain :</strong> L'évolution des technologies de registre distribué et leurs applications dans différents secteurs.</li>
+                <li><strong>Cybersécurité :</strong> Les nouvelles menaces et les meilleures pratiques pour protéger les systèmes d'information.</li>
+                <li><strong>Cloud Computing :</strong> Les nouvelles solutions de cloud et les tendances en matière de déploiement et de gestion des infrastructures.</li>
+                <li><strong>Développement Web :</strong> Les nouveaux frameworks et outils pour le développement d'applications web modernes.</li>
             </ul>
-        </nav>
-    </header>
+        </main>
 
-    <section id="veille" class="section">
-        <h2>Veille Technologique</h2>
-        <p>Découvrez mes activités de veille technologique, incluant les dernières tendances et innovations dans le domaine informatique.</p>
-        <img src="images/veille.png" alt="Veille Technologique">
-    </section>
-
-    <section id="activities" class="section">
-        <h2>Activités</h2>
-        <ul>
-            <li>Suivi des nouvelles technologies</li>
-            <li>Participation à des conférences</li>
-            <li>Lecture de blogs spécialisés</li>
-            <li>Expérimentations personnelles</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Dervis Sahin. Tous droits réservés.</p>
-    </footer>
-    <script src="scripts/script.js"></script>
+        <footer>
+            <p>&copy; 2024 Dervis Sahin. Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
 </body>
 </html>

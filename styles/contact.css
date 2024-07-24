@@ -28,6 +28,7 @@ body, html {
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1; /* Assure que la section est au-dessus du canvas */
+    margin-top: 3em;
 }
 
 .section h2 {
@@ -71,4 +72,10 @@ form button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+}
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: #ccc;
+    text-align: center;
+    padding: 1em 0;
 }

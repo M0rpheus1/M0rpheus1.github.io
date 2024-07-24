@@ -44,3 +44,9 @@
     color: #00ff00; /* Texte vert Matrix */
     text-shadow: 2px 2px 5px #000; /* Ombre pour améliorer la lisibilité */
 }
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: #ccc;
+    text-align: center;
+    padding: 1em 0;
+}

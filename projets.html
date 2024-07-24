@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projets.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Dervis Sahin</div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="bts_sio.html">BTS SIO</a></li>
+                    <li><a href="projets.html" class="active">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="veille.html">Veille Technologique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <canvas id="matrixCanvas"></canvas>
+
+        <main id="projets" class="section">
+            <h2>Mes Projets</h2>
+            <p>Voici une sélection de projets sur lesquels j'ai travaillé durant ma formation et mes expériences professionnelles.</p>
+            
+            <div class="project">
+                <h3>Projet 1 : Application pour entreprise de mutuelle</h3>
+                <p><strong>Description :</strong> Développement d'une application qui permet aux commercials de l'entreprise de créer une offre spcécifiques pour son client. Avec une interface ergonimique et pratique. Exemple : possibilité de création de powerpoint pour le client...</p>
+                <p><strong>Langages utilisés :</strong> JavaScript, HTML, CSS, PHP, SQL</p>
+                <p><strong>Framework :</strong> PHP LARAVEL</p>
+                <p><strong>Évolutions effectuées 1 :</strong> Création d'un système qui permet la génération de fichiers CSV rempli automatiquement avec les différents code défini par l'application. Cela permet d'obtenir quel types de prestations et le plus utilisés et surtout cela permet de faire des récapitulatifs pour l'entreprise sur ses prestations les plus vendus. </p>
+                <p><strong>Évolutions effectuées 2 :</strong> Modifications d'un services en backend. Le transfert d'archive se faisait uniquement par SFTP (user+ password). Il se fait désormais avec une clé SSH plus une passphrase sur la clé ainsi que user plus mot de passe. </p>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Dervis Sahin. Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
