@@ -1,0 +1,58 @@
+/* Styles spécifiques à la page BTS SIO */
+
+#bts_sio {
+    position: relative;
+    text-align: center;
+    color: #00ff00; /* Texte vert Matrix */
+}
+
+#bts_sio img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.section {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #fff;
+    margin: 2em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #00ff00; /* Titre vert Matrix */
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+.project {
+    margin-top: 2em;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #00ff00; /* Sous-titre vert Matrix */
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+}

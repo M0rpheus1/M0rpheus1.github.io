@@ -6,9 +6,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -21,10 +22,11 @@ header {
     z-index: 1000;
 }
 
-    header .logo {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ff00; /* Vert Matrix */
+}
 
 nav ul {
     list-style-type: none;
@@ -34,28 +36,50 @@ nav ul {
     justify-content: center;
 }
 
-    nav ul li {
-        margin: 0 15px;
-    }
+nav ul li {
+    margin: 0 15px;
+}
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-            transition: background-color 0.3s ease;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-            nav ul li a.active,
-            nav ul li a:hover {
-                background-color: #ff5733;
-            }
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #00ff00;
+    color: #333;
+}
 
 .section {
-    padding: 2em 1em;
+    padding: 4em 2em;
     text-align: center;
     background-color: #fff;
     margin: 2em 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #00ff00; /* Vert Matrix */
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5em;
 }
 
 footer {
